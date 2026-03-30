@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { simpleParser } from 'mailparser';
-import Mbox from 'node-mbox';
+import { Mbox } from 'node-mbox';
 import { Readable } from 'stream';
 
 const matchJobState = (text, subject) => {
